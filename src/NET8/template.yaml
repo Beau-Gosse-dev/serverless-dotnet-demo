@@ -107,7 +107,7 @@ Resources:
             Method: GET
       Environment:
         Variables:
-          LOG_GROUP_PREFIX: !Sub "/aws/lambda/net-8-base-x86"
+          LOG_GROUP_PREFIX: !Sub "/aws/lambda/net-8-base-"
           LOAD_TEST_TYPE: "NET 8"
           LAMBDA_ARCHITECTURE: "x86_64"
       Policies:
