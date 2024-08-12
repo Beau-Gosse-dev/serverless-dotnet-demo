@@ -29,7 +29,7 @@ jobs:
             template-file-path: ./src/NET8Native/template.yaml
             project-directory: ./src/NET8Native/
             stack-name: net-8-native
-            s3-bucket-name: aws-dotnet-lambda-testing-beau
+            s3-bucket-name: aws-dotnet-lambda-testing-beau-eu
 
   load-test-arm:
       needs: build-deploy
