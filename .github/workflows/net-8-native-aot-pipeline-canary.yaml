@@ -22,7 +22,7 @@ jobs:
             template-file-path: ./src/NET8Native/template.yaml
             project-directory: ./src/NET8Native/
             stack-name: net-8-native
-            s3-bucket-name: aws-dotnet-lambda-testing
+            s3-bucket-name: aws-dotnet-lambda-testing-beau
 
   build-deploy-arm:
       # This needs to run on our custom runner which supports ARM. The runner is an EC2 instance manually 
@@ -40,7 +40,7 @@ jobs:
             template-file-path: ./src/NET8Native/template.yaml
             project-directory: ./src/NET8Native/
             stack-name: net-8-native
-            s3-bucket-name: aws-dotnet-lambda-testing
+            s3-bucket-name: aws-dotnet-lambda-testing-beau
 
   load-test-x86:
       needs: build-deploy
